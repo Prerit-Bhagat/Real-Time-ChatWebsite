@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import *
+from .models import Member
 
-class SerializerName(serializers.ModelSerializer):
+class MemberSerializer(serializers.ModelSerializer):
     class Meta:
-        model = React
-        fields = ['firstname','lastname']
+        model = Member
+        fields = ['firstname', 'lastname']  # Make sure these fields exist in your Member model
