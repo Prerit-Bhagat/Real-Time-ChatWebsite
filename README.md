@@ -13,8 +13,8 @@ This project integrates **React** and **Django** to create a real-time chatbot a
 
 ## Technology Stack
 
-- **Frontend**: React
-- **Backend**: Django, Django Channels, Django REST Framework
+- **Frontend**: ![React Logo](https://reactjs.org/logo-og.png) React
+- **Backend**: ![Django Logo](https://www.djangoproject.com/m/img/logos/django-logo-negative.png) Django, Django Channels, Django REST Framework
 - **Database**: SQL-LITE (or any other supported relational database)
 - **WebSocket Library**: Django Channels
 
@@ -23,5 +23,3 @@ This project integrates **React** and **Django** to create a real-time chatbot a
 - Python 
 - Django 
 - React 
-
-
