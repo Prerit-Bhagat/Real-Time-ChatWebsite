@@ -15,6 +15,7 @@ import HomePage from './Home';
 import Login from './Login';
 import Register from './Register';
 import Layout from './Layout';
+import ChatRoom  from './Chat'; 
 
 // An <Outlet> should be used in parent route elements to render 
 // their child route elements. This allows nested UI to show up when 
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+      <Route path='chat' element={<ChatRoom/>}  />
     </Route>
   )
 );
