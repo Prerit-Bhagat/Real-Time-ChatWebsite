@@ -1,5 +1,5 @@
-# Real-Time Chatbot with React and Django
-
+# Real-Time ChatWebsite with React and Django
+#Under Process Not Fully Functional Till Now
 ## Overview
 
 This project integrates **React** and **Django** to create a real-time chatbot application. By leveraging **Django Channels**, it enables real-time communication between users and the chatbot. The frontend is built with React, providing a modern and interactive user experience.
