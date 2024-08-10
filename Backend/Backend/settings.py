@@ -34,7 +34,7 @@ ROOT_URLCONF = 'Backend.urls'
 # CORS_ALLOWED_ORIGINS = [
 #     "http://127.0.0.1:5174",  # React frontend
 # ]
-
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
