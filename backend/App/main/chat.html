@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <button onclick="sendMessage('Hello, World!')">Send Message</button>
+    <script>
+        const chatSocket = new WebSocket(
+            'ws://' + window.location.host + '/chat/'  // Connects to the WebSocket
+        );
+
+        chatSocket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+            console.log(data);  // Log the message received from the server
+        };
+
+        chatSocket.onclose = function(e) {
+            console.error('Chat socket closed unexpectedly');
+        };
+
+        function sendMessage(message) {
+            chatSocket.send(JSON.stringify({
+                'message': message
+            }));
+        }
+    </script>
+</body>
+</html>
